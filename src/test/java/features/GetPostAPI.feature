@@ -23,6 +23,7 @@ Feature: Verify Get/Post API
     When method post
     Then status 201
     And match response == "#object"
+    And match response.id == "#notnull"
     And match response.name == "morpheus"
     And match response.job == "leader"
 
