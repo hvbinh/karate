@@ -18,6 +18,8 @@ Feature: Verify Get/Post API
     And match response.total == 12
     # verify response trả về total_pages = 2
     And match response.total_pages == 2
+    # verify response trả về name của data[0]
+    And match response.data[0].name == "cerulean"
 
   Scenario: Verify response post method of create new user
     # gắn path vào url ở background

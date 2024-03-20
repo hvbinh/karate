@@ -15,3 +15,4 @@ Feature: login then verify text in
     And click("//a[@id='about_sidebar_link']")
     # verify text của nút bằng 'Request a demo'
     Then match text("//a[@href='/request-demo']/button") == "Request a demo"
+
